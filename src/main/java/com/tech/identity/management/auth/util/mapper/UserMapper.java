@@ -8,7 +8,7 @@ import com.tech.identity.management.auth.db.entity.UserInfo;
 import com.tech.identity.management.web.dto.AuthRequest;
 
 @Mapper
-public interface UserMapper {
+public interface UserMapper{
 	
 	UserMapper INSTANCE = Mappers.getMapper(UserMapper.class);
 	
