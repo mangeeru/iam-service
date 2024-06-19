@@ -43,9 +43,9 @@ public class AuthController {
     public String validateToken(@RequestBody TokenRequest tokenRequest) {
     	boolean flag = userService.validateToken(tokenRequest.getToken(),tokenRequest.getUserName());
         if(flag) {
-        	return "Valid token";
+        	return "true";
         }
-    	return "KInalid Token";
+    	return "false";
     }
 
 }
