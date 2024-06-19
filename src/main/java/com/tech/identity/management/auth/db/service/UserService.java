@@ -24,7 +24,7 @@ public class UserService {
 	
 	public String saveUser(AuthRequest authRequest) {
 		//UserInfo userInfo = UserMapper.INSTANCE.authUserToInfo(authRequest);
-		UserInfo userInfo = new UserInfo(authRequest.getUserName(), authRequest.getEmail(), authRequest.getPhone(), authRequest.getDateOfBirth());
+		UserInfo userInfo = new UserInfo(authRequest.getUserName(), authRequest.getEmail(), authRequest.getPhone());
 		userInfo.setSecrethash(passwordEncoder.encode(authRequest.getPassword()));
         userRepository.save(userInfo);
         return "user added to the system";
