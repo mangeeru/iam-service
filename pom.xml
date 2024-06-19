@@ -111,6 +111,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>iam-service-v1</finalName>
 	</build>
 
 </project>
